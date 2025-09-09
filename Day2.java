@@ -6,7 +6,7 @@ public class day2 {
         
         System.out.println("---- SOAL 2 ----");
         System.out.print("Selamat anda menjadi anggota ISC");
-        System.out.println(" ");
+        System.out.println("");
         
         System.out.println("---- SOAL 3 ----");
         String nama = "Aldi Salam";
