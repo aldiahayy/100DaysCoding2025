@@ -11,7 +11,7 @@ public static void main(String[] args) {
     byte umur = sc.nextByte();
     //short 
     System.out.print("Masukkan bulan lahir : ");
-    short bulanLahir= sc.nextShort();
+    short bulanLahir = sc.nextShort();
     //int
     System.out.print("Masukkan tahun lahir : ");
     int tahunLahir = sc.nextInt();
