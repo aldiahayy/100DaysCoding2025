@@ -20,10 +20,10 @@ public static void main(String[] args) {
     float ipk = sc.nextFloat();
     
     System.out.println("==============================\n      BIODATA MAHASISWA\n==============================");
-    System.out.printf("%-7s : %-5s %n", "Nama", nama);
-    System.out.printf("%-7s : %-5s %n", "NIM", nim);
-    System.out.printf("%-7s : %-3dtahun %n", "Umur", umur);
-    System.out.printf("%-7s : %-5c %n", "Kelas", kelas);
-    System.out.printf("%-7s : %-5.2f %n", "IPK", ipk);
+    System.out.printf("%-7s : %s %n", "Nama", nama);
+    System.out.printf("%-7s : %s %n", "NIM", nim);
+    System.out.printf("%-7s : %d tahun %n", "Umur", umur);
+    System.out.printf("%-7s : %c %n", "Kelas", kelas);
+    System.out.printf("%-7s : %.2f %n", "IPK", ipk);
 }    
 }
