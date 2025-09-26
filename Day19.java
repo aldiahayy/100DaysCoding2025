@@ -1,9 +1,9 @@
 public class day19 {
 public static void main(String[] args) {
-    int angkaBesarLong = 123456789;
+    int angkaBesarInt = 123456789;
     float angkaBesarFloat = 3.1428571428571f;
     
-    short angkaKecilShort = (short)angkaBesarLong;
+    short angkaKecilShort = (short)angkaBesarInt;
     int angkaKecilInt = (int)angkaBesarFloat;
     
     System.out.println("Konversi dari integer ke short : " + angkaKecilShort);
