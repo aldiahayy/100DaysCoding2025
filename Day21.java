@@ -11,7 +11,7 @@ public static void main(String[] args) {
     b = a - b; // 50 - 28 = 22
     a = a - b; // 50 - 22 = 28
     
-    System.out.println("=====SEBELUM DITUKAR=====");
+    System.out.println("=====SETELAH DITUKAR=====");
     System.out.printf("%-7s : %d %n", "Nilai a", a);
     System.out.printf("%-7s : %d %n", "Nilai b", b);
 }
