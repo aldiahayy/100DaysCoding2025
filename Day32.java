@@ -8,6 +8,6 @@ public static void main(String[] args) {
     boolean undanganKhusus = sc.nextBoolean();
     
     boolean dapatAksesVip = anggotaPremium || undanganKhusus;
-    System.out.println("Apakah kamu menndapatkan Akses VIP? " + dapatAksesVip);
+    System.out.println("Apakah kamu mendapatkan Akses VIP? " + dapatAksesVip);
 }    
 }
