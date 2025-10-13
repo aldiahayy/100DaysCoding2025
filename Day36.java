@@ -4,10 +4,10 @@ public class day36 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Apakah kamu memiliki kartu akses? (true/false) : ");
         boolean kartu = sc.nextBoolean();
-        if (kartu == true) {
+        if (kartu) {
             System.out.print("Pintu Gerbang Utama berhasil diakses\nApakah kamu sedang dalam jadwal piket? (true/false) : ");
             boolean piket = sc.nextBoolean();
-            if (piket == true) {
+            if (piket) {
                 System.out.print("Pintu Gerbang IT berhasil di akses\nSilahkan masukkan pin : ");
                 int pin = sc.nextInt();
                 if (pin == 1234) {
