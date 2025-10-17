@@ -46,7 +46,7 @@ public class day40 {
         if (cek == true) {
             System.out.println("Jadi hasil dari " + angka1 + pesan + angka2 + " adalah " + kalkulator);
         }else if (pesan.equalsIgnoreCase("salah")) {
-            System.out.println("operasi error");
+            System.out.println("tidak terdefinisi");
         }else{
             System.out.println("operasi yang dimasukkan tidak ada");    
 
