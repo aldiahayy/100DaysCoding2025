@@ -4,7 +4,7 @@ public class day40 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukkan angka pertama : ");
         double angka1 = sc.nextDouble();
-        System.out.print("Masukkan operasi (*|/|+|-|%) : ");
+        System.out.print("Masukkan operasi (*|/|+|-) : ");
         char operasi = sc.next().charAt(0);
         System.out.print("Masukkan angka kedua : ");
         double angka2 = sc.nextDouble();
@@ -32,14 +32,6 @@ public class day40 {
             kalkulator = angka1 - angka2;
             pesan = " - ";
             cek = true;
-        } else if (operasi == '%') {
-            if (angka2 != 0) {
-            kalkulator = angka1 % angka2;
-            pesan = " % ";
-            cek = true;
-            } else {
-            pesan = "salah";
-            }
         } else {
             cek = false;
         }
