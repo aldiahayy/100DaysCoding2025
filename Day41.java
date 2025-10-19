@@ -14,17 +14,19 @@ public class soal1 {
         double beli = barang * harga;
         boolean status2 = Boolean.parseBoolean(status);
         double totalAkhir = beli;
+        double diskon = 0;
         boolean deteksi = beli >= 250000 && status2;
         System.out.println("\n--- Ringkasan Pembelian ---");
         System.out.printf("%-17s : Rp %.2f %n", "Total Pembelian", beli);
   
         if (deteksi) {
-            double diskon = beli * 0.10;
+            diskon = beli * 0.10;
             totalAkhir -= diskon;
             System.out.printf("%-17s : %b %n", "Berhak Diskon 10%", deteksi);
             System.out.printf("%-17s : Rp %.2f %n", "Jumlah Diskon", diskon);
         } else {
             System.out.printf("%-17s : %b %n", "Berhak Diskon 10%", deteksi);
+            System.out.printf("%-17s : Rp %.2f %n", "Jumlah Diskon", diskon);
         }
             System.out.printf("%-17s : Rp %.2f %n", "Total Bayar", totalAkhir);
     }
@@ -39,10 +41,10 @@ public class soal2 {
         int s = sc.nextInt();
         System.out.print("Masukkan lama pengerjaan tugas : ");
         int l = sc.nextInt();
-        int waktu = s + l;
-        int h = waktu % 24;
-        if (h < 9) {
-            System.out.println((9 - h) + " jam");
+        
+        int waktu = (s + l) % 24;
+        if (waktu < 9) {
+            System.out.println((9 - waktu) + " jam");
         } else {
             System.out.println("0 jam");
         }
