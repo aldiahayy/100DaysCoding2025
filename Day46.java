@@ -55,7 +55,7 @@ public static void main(String[] args) {
         System.out.println("--- Detail Pesanan ---");
         System.out.printf("Nama pelanggan    : %s %n", nama);
         System.out.printf("Menu yang dipilih : %s %n", pesan);
-        System.out.printf("Jumlah menu       : %d %n", jumlah);
+        System.out.printf("Jumlah pesanan    : %d %n", jumlah);
         System.out.printf("Total harga       : Rp%, d %n", total);
     }else{
         System.out.println(pesan);
