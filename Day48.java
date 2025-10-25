@@ -10,7 +10,7 @@ public static void main(String[] args) {
     double angka2 = sc.nextDouble();
     double hasil = 0;
     String pesan = "";
-    boolean cek;
+    boolean cek = false;
     switch (operator){
         case '*':
             hasil = angka1 * angka2;
@@ -21,10 +21,10 @@ public static void main(String[] args) {
             if (angka2 != 0) {
                 hasil = angka1 / angka2;
                 pesan = " / ";
+                cek = true;
             }else{
-                System.out.println("tidak terdefinisi");
+                cek = false;
             }
-            cek = true;
             break;
         case '+':
             hasil = angka1 + angka2;
@@ -40,13 +40,13 @@ public static void main(String[] args) {
             if (angka2 != 0) {
                 hasil = angka1 % angka2;
                 pesan = " % ";
+                cek = true;
             }else{
-                System.out.println("tidak terdefinisi");
+                cek = false;
             }
-            cek = true;
             break;
         default:
-            cek = false;
+            pesan = "salah";
     }
     if (cek == true) {
         if (angka1 % 1 != 0 || angka2 % 2 != 0){
@@ -57,9 +57,11 @@ public static void main(String[] args) {
             }else{
                 System.out.println("hasil dari " + angka1 + pesan + angka2 + " adalah " + hasil);
             }
-    } 
-    }else{
+        } 
+    }else if (pesan.equalsIgnoreCase("salah")) {
         System.out.println("operator yang anda masukkan tidak ada");
+    }else{
+        System.out.println("tidak terdefinisi");
     }
 }  
 }
