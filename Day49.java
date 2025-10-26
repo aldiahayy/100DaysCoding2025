@@ -1,11 +1,9 @@
-import java.util.Scanner;
 public class day49 {
 public static void main(String[] args) {
     int a = 5;
     int b = 7;
     // 1. ternary pada int
-    int cek1 = (a > b)? a : b;
-    System.out.println("1. nilai terbesar antara " + a + " dan " + b + " adalah " + cek1);
+    System.out.println(a > b? "1. nilai terbesar adalah " + a : "1. nilai terbesar adalah " + b);
     
     // 2. ternary pada String
     String cek2 = (a > b)? "ya" : "tidak";
