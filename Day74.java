@@ -11,7 +11,7 @@ public static void main(String[] args) {
         System.out.println("3. Kopi Susu Rp 5.000");
         System.out.println("4. Bakso Kuah Rp 10.000");
         System.out.println("5. Selesaikan Pembayaran");
-        System.out.print("Pilihan menu yang akan anda pesan: ");
+        System.out.print("Pilih menu yang akan anda pesan: ");
         pilihan = sc.nextInt();
         
         switch (pilihan){
