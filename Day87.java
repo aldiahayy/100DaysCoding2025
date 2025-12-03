@@ -15,7 +15,7 @@ public static void main(String[] args) {
         }
     }
     if (cek) {
-         System.out.println("Buku ditemukan di indeks ke-"+(indeks)+" tumpukan ke "+(indeks+1));
+        System.out.println("Buku ditemukan di indeks ke-"+(indeks)+" tumpukan ke "+(indeks+1));
     }else{
         System.out.println("Maaf, buku tidak ada di tumpukan.");
     }
